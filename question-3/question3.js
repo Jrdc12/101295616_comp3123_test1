@@ -26,7 +26,6 @@ const deleteLogs = () => {
                     console.log(`delete files ${file}`)
                 }
             }
-            //fs.unlinkSync(`${target}/${file}`);
         });
         fs.rmdirSync(target);
     }
