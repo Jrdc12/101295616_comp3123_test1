@@ -1,8 +1,9 @@
 const mixedArray = ['PIZZA', 10, true, 25, false, 'Wings'];
 
-const lowerCaseWords = (mixedArray) => {
+const lowerCaseWords = (arr) => {
     return new Promise((resolve, reject) => {
-        const result = mixedArray.filter((item) => typeof item === 'string').map((item) => item.toLowerCase());
+        const result = arr.filter((item) => typeof item === 'string').map((item) => item.toLowerCase());
+        
         if (result.length > 0) {
             resolve(result);
         } else {
